@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     [Header("Active")]
-    public bool Movement = false;
+    public bool MOVEMENT = false;
 
     private Player player = null;
     private Movement movement = null;
@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if(Movement)
+        if(MOVEMENT)
             MovementInput();
     }
 
