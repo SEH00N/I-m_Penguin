@@ -11,4 +11,14 @@ public class Player : MonoBehaviour
             return movement;
         }
     }
+
+    private PlayerHealth playerHealth = null;
+    public PlayerHealth PlayerHealth {
+        get {
+            if(playerHealth == null)
+                playerHealth = GetComponent<PlayerHealth>();
+            
+            return playerHealth;
+        }
+    }
 }

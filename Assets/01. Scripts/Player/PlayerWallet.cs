@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerWallet : MonoBehaviour
 {
-    [SerializeField] int maxMoney;
+    [SerializeField] int maxMoney = 99999999;
 
-    private int money;
+    private int money = 0;
 
     /// <summary>
     /// 돈 획득 메소드
@@ -20,14 +20,20 @@ public class PlayerWallet : MonoBehaviour
 
     /// <summary>
     /// 돈 사용 메소드
+    /// <br/>
+    /// 현재 돈이 코스트보다 적으면 돈이 깎이지 않음
     /// </summary>
     /// <param name="cost">소비량</param>
-    public void UseMoney(int cost)
+    /// <returns>able to use money</returns>
+    public bool UseMoney(int cost)
     {
-        int modifiedCost = -(Mathf.Max(0, money - cost) - money);
-        money -= modifiedCost;
+        if(money < cost)
+            return false;
 
-        MoneyUseEffect(modifiedCost);
+        money -= cost;
+        MoneyUseEffect(cost);
+
+        return true;
     }
 
     /// <summary>
