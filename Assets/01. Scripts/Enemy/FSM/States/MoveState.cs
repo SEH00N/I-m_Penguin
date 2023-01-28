@@ -10,7 +10,7 @@ public class MoveState : EnemyState
     {
         Debug.Log("Enemy Move");
 
-        mover = brain.GetComponent<Movement>();
+        mover = controller.GetComponent<Movement>();
     }
 
     public override void UpdateAction()
@@ -25,6 +25,6 @@ public class MoveState : EnemyState
 
     private Vector2 GetMoveDirection()
     {
-        return (brain.target.transform.position - brain.transform.position).normalized;
+        return (controller.target.transform.position - controller.transform.position).normalized;
     }
 }

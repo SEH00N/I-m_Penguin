@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9782318c048bcac4b9eba02366697352, type: 3}
-  m_Name: DemoEnemy
+  m_Script: {fileID: 11500000, guid: e5417b5e834a84842b8a00f3ada8cc33, type: 3}
+  m_Name: DemoEnemyInfoSO
   m_EditorClassIdentifier: 
-  inAccel: 60
-  deAccel: 100
-  maxSpeed: 7
+  maxHealth: 100
+  killReward: 100

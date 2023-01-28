@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public abstract class EnemyState
 {
-    protected EnemyBrain brain;
+    protected EnemyController controller;
 
-    public void SetBrain(EnemyBrain _brain) 
+    public void SetController(EnemyController _controller) 
     {
-        brain = _brain;
+        controller = _controller;
     }
 
     public abstract void StartAction();
