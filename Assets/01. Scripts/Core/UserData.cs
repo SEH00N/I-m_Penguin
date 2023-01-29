@@ -1,18 +1,17 @@
 
 public class UserData : Data
 {
+    public int money = 0;
+
     public override void Generate()
     {
-        throw new System.NotImplementedException();
+        money = 0;
     }
 
-    public override bool IsNull()
-    {
-        throw new System.NotImplementedException();
-    }
+    public override bool IsNull() => false;
 
     public override void Save()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

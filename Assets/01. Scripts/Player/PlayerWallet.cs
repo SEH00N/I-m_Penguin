@@ -40,6 +40,15 @@ public class PlayerWallet : MonoBehaviour
     /// 돈 초기화
     /// </summary>
     public void ResetMoney() => money = 0;
+    
+    /// <summary>
+    /// 돈 저장
+    /// </summary>
+    public void SaveMoney()
+    {
+        DataManager.Instance.userData.money = this.money;
+        DataManager.Instance.SaveData<UserData>(DataManager.Instance.userData);
+    }
 
     /// <summary>
     /// 현재 돈

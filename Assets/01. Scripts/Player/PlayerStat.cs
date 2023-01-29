@@ -11,9 +11,15 @@ public struct StatInfo
 
 public class PlayerStat : MonoBehaviour
 {
+    /// <summary>
+    /// 초기 스탯
+    /// </summary>
     [SerializeField] List<StatInfo> initalStats = new List<StatInfo>();    
     private Dictionary<Stat, float> stats = new Dictionary<Stat, float>();
 
+    /// <summary>
+    /// 스탯 읽기용 인덱서
+    /// </summary>
     public float this[Stat stat] => stats[stat];
 
     private void Awake()
@@ -22,6 +28,9 @@ public class PlayerStat : MonoBehaviour
             CreateStat(sInfo);
     }
 
+    /// <summary>
+    /// 스탯 딕셔너리 생성
+    /// </summary>
     private void CreateStat(StatInfo info)
     {
         if(stats.ContainsKey(info.stat))
@@ -33,6 +42,9 @@ public class PlayerStat : MonoBehaviour
         stats.Add(info.stat, info.value);
     }
 
+    /// <summary>
+    /// 스택 증가 및 감소
+    /// </summary>
     public void SetStat(Stat stat, float amount)
     {
         if(!stats.ContainsKey(stat))
