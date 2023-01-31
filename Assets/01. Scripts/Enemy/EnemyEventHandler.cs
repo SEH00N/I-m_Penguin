@@ -25,7 +25,7 @@ public class EnemyEventHandler : MonoBehaviour
     #region  attack
     private void SetAttackEvent()
     {
-
+        animator.SetTrigger("Attack");
     }
     #endregion
 

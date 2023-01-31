@@ -5,11 +5,13 @@ using UnityEngine;
 
 [RequireComponent(typeof(Movement))]
 [RequireComponent(typeof(EnemyHealth))]
+[RequireComponent(typeof(EnemyEventHandler))]
+[RequireComponent(typeof(EnemyInfo))]
 public class EnemyController : MonoBehaviour
 {    
     public EnemyState currentState;
     public GameObject target;
-    public EnemyInfoSO info;
+    [HideInInspector] public EnemyInfoSO info;
 
     private Dictionary<Type, EnemyState> stateList = new Dictionary<Type, EnemyState>();
 
@@ -32,6 +34,8 @@ public class EnemyController : MonoBehaviour
 
     private void Init()
     {
+        info = GetComponent<EnemyInfo>().enemyInfo;
+
         AddState(new MoveState());
         AddState(new AttackState());
         AddState(new DeadState());

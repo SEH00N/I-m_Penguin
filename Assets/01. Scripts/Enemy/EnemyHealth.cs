@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     private void Start() 
     {
-        maxHp = GetComponent<EnemyController>().info.maxHealth;
+        maxHp = GetComponent<EnemyInfo>().enemyInfo.maxHealth;
         currentHp = MaxHp;
     }
 
