@@ -10,7 +10,7 @@ public class AttackState : EnemyState
     {
         Debug.Log("Enemy Attack");
 
-        controller.GetComponent<IEnemyAttack>().Attack();    
+        controller.GetComponent<EnemyEventHandler>().attackAction();
     }
 
     public override void UpdateAction()

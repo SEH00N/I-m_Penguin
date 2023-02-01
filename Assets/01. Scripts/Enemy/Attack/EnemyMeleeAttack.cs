@@ -2,38 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMeleeAttack : MonoBehaviour, IEnemyAttack
+public class EnemyMeleeAttack : EnemyAttack
 {
-    public Vector2 attackOffset;
+    public Transform attackPosition;
 
-    private EnemyEventHandler enemyEvent;
-    private float meleeAttackRangeRadius;
-
-    private void Start() 
+    public override void Attack()
     {
-        enemyEvent = GetComponent<EnemyEventHandler>();    
-        meleeAttackRangeRadius = GetComponent<EnemyInfo>().enemyInfo.meleeAttackRangeRadius;
+        MeleeAttack();
     }
 
-    public void Attack()
+    protected override void MeleeAttack()
     {
-        enemyEvent.attackAction?.Invoke();
-    }
-
-    public void MeleeAttack()
-    {
-        Collider2D hit = Physics2D.OverlapCircle((Vector2)transform.right + new Vector2(meleeAttackRangeRadius * 0.5f, 0) + attackOffset, 
-            meleeAttackRangeRadius, 1 << 8);
+        Collider2D hit = Physics2D.OverlapCircle(attackPosition.position, info.meleeAttackRangeRadius, 1 << 8);
 
         if(hit)
         {
-            Debug.Log("hit");
+            IDamageable player;
+
+            if(hit.TryGetComponent<IDamageable>(out player))
+            {
+                //player.OnDamage(info.meleeAttackPower);
+                Debug.Log(1);
+            }
         }
     }
 
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos() 
+    {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.right + new Vector2(meleeAttackRangeRadius * 0.5f, 0) + attackOffset, 
-            0.5f);
+    
+        Gizmos.DrawWireSphere(attackPosition.position, 1f);
     }
 }

@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
 {    
     public EnemyState currentState;
     public GameObject target;
+    public GameObject body;
     [HideInInspector] public EnemyInfoSO info;
 
     private Dictionary<Type, EnemyState> stateList = new Dictionary<Type, EnemyState>();
@@ -68,4 +69,10 @@ public class EnemyController : MonoBehaviour
         state.SetController(this);
     }
     #endregion
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(body.transform.position, 2.2f);
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveState : EnemyState
 {
     private Movement mover;
+    private Animator animator;
     private float currentAttackTime;
 
     public override void StartAction()
@@ -12,6 +13,7 @@ public class MoveState : EnemyState
         Debug.Log("Enemy Move");
 
         mover = controller.GetComponent<Movement>();
+        animator = controller.GetComponent<Animator>();
     }
 
     public override void UpdateAction()
@@ -38,10 +40,13 @@ public class MoveState : EnemyState
         if(!IsAttackRange())
         {
             mover.MoveTo(GetMoveDirection());
+            animator.SetInteger("MoveState", 1);
+            
         }
         else
         {
             mover.StopImmediately();
+            animator.SetInteger("MoveState", 0);
         }
 
         Flip();
@@ -66,7 +71,7 @@ public class MoveState : EnemyState
 
     private bool IsAttackRange()
     {
-        return Vector2.Distance(controller.transform.position, controller.target.transform.position) <= controller.info.attackDistance;
+        return Vector2.Distance(controller.body.transform.position, controller.target.transform.position) <= controller.info.attackDistance;
     }
 
     private void Flip()
