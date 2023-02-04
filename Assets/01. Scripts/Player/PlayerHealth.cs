@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
@@ -8,6 +9,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public int CurrentHp => currentHp;
     public int MaxHp => maxHp;
+
+    public UnityEvent OnDamageEvent;
+    public UnityEvent OnDieEvent;
 
     public void OnDamage(int damage, Action callback = null)
     {
@@ -44,7 +48,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     /// </summary>
     private void HitEffect(int damage)
     {
-        
+        OnDamageEvent?.Invoke();
     }
 
     /// <summary>
@@ -52,7 +56,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     /// </summary>
     private void OnDie()
     {
-
     }
 
     /// <summary>
@@ -60,6 +63,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     /// </summary>
     private void DieEffect()
     {
-        
+        OnDieEvent?.Invoke();
     }
 }

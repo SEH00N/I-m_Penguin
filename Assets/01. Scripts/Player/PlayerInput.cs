@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -6,12 +7,12 @@ public class PlayerInput : MonoBehaviour
     public bool MOVEMENT = false;
 
     private Player player = null;
-    private Movement movement = null;
+
+    public UnityEvent<Vector2> OnMovementInput;
 
     private void Awake()
     {
         player = GetComponent<Player>();
-        movement = player.Movement;
     }
 
     private void Update()
@@ -25,6 +26,6 @@ public class PlayerInput : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        movement.MoveTo(new(x, y));
+        OnMovementInput?.Invoke(new Vector2(x, y));
     }
 }
