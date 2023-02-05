@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class EnemyMeleeAttack : EnemyAttack
 {
-    public Transform attackPosition;
-
     public override void Attack()
     {
         MeleeAttack();
     }
 
-    protected override void MeleeAttack()
+    private void MeleeAttack()
     {
         Collider2D hit = Physics2D.OverlapCircle(attackPosition.position, info.meleeAttackRangeRadius, 1 << 8);
 
@@ -25,12 +23,5 @@ public class EnemyMeleeAttack : EnemyAttack
                 Debug.Log(1);
             }
         }
-    }
-
-    private void OnDrawGizmos() 
-    {
-        Gizmos.color = Color.red;
-    
-        Gizmos.DrawWireSphere(attackPosition.position, 1f);
     }
 }
