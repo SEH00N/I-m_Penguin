@@ -5729,7 +5729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d714c67736518664aa746690dcab4ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSO: {fileID: 0}
+  movementSO: {fileID: 11400000, guid: a877365e4bb9a4b4496e6313ca0b4e43, type: 2}
 --- !u!114 &5981231110207311336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5766,7 +5766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6399a1c862bf1f44be9fdae88c21961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyInfo: {fileID: 0}
+  enemyInfo: {fileID: 11400000, guid: 55c60ad0e7111ab41a4dedea097e90a6, type: 2}
 --- !u!114 &5981231110207311343
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d714c67736518664aa746690dcab4ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSO: {fileID: 0}
+  movementSO: {fileID: 11400000, guid: 025ceac90db8af84cbbcc58260bf4741, type: 2}
 --- !u!114 &4264742579613581787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6399a1c862bf1f44be9fdae88c21961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyInfo: {fileID: 0}
+  enemyInfo: {fileID: 11400000, guid: 5bd3aca084636e74c9d26804213785f3, type: 2}
 --- !u!114 &4264742579613581764
 MonoBehaviour:
   m_ObjectHideFlags: 0

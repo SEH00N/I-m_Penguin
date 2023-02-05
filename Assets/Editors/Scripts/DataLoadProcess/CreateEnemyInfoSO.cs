@@ -4,12 +4,11 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-public class CreateEnemySO : IDataLoadProcess
+public class CreateEnemyInfoSO : IDataLoadProcess
 {
     public void Process(string[] dataArray)
     {
-        //¿Ã∏ß hp speed critical
-        EnemyInfoSO asset = AssetDatabase.LoadAssetAtPath<EnemyInfoSO>($"Assets/01.Scripts/Character/SO/{dataArray[0]}.asset");
+        EnemyInfoSO asset = AssetDatabase.LoadAssetAtPath<EnemyInfoSO>($"Assets/06. SO/Enemy/Info/{dataArray[0]}.asset");
 
         if (asset == null)
         {

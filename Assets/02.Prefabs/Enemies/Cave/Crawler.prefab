@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5788745399299890164}
-  - component: {fileID: 1525847944403609810}
   - component: {fileID: 2600188212591381076}
   - component: {fileID: 4548988256089294295}
   - component: {fileID: 4548988256089294286}
@@ -43,17 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!210 &1525847944403609810
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955777925926206768}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 200
 --- !u!95 &2600188212591381076
 Animator:
   serializedVersion: 5
@@ -123,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d714c67736518664aa746690dcab4ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSO: {fileID: 0}
+  movementSO: {fileID: 11400000, guid: ecd3327c59de0fa4b8c97bf9c7e463df, type: 2}
 --- !u!114 &4548988256089294284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6399a1c862bf1f44be9fdae88c21961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyInfo: {fileID: 0}
+  enemyInfo: {fileID: 11400000, guid: fe6b8429b6d356b4fbd8413bcdc3fdaa, type: 2}
 --- !u!114 &4548988256089294289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +164,7 @@ MonoBehaviour:
   target: {fileID: 0}
   body: {fileID: 6000711313943507356}
   info: {fileID: 0}
+  attackDistance: 2
 --- !u!114 &4548988256089294288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPosition: {fileID: 8547514199662156040}
+  meleeAttackRange: 1
 --- !u!1 &2816820416457120123
 GameObject:
   m_ObjectHideFlags: 0

@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d714c67736518664aa746690dcab4ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSO: {fileID: 0}
+  movementSO: {fileID: 11400000, guid: 8063daada45d8374eb24de2bcb8926b6, type: 2}
 --- !u!114 &5191568769762093849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6399a1c862bf1f44be9fdae88c21961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyInfo: {fileID: 0}
+  enemyInfo: {fileID: 11400000, guid: ec0636ccf29453e49bf882ed30f33dc6, type: 2}
 --- !u!114 &5191568769762093828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +708,7 @@ MonoBehaviour:
   target: {fileID: 0}
   body: {fileID: 5191568770493653544}
   info: {fileID: 0}
+  attackDistance: 2
 --- !u!114 &5191568769762093829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPosition: {fileID: 5191568769974397932}
+  meleeAttackRange: 1
 --- !u!1 &5191568769953536566
 GameObject:
   m_ObjectHideFlags: 0

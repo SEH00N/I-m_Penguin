@@ -5,6 +5,7 @@ using System;
 using UnityEngine.Networking;
 using System.Threading.Tasks;
 using UnityEditor;
+using Unity.EditorCoroutines.Editor;
 
 #if UNITY_EDITOR
 public class DataLoad
@@ -13,25 +14,25 @@ public class DataLoad
 
     public DataLoad(string documentID, string sheetID, IDataLoadProcess _dataLoadProcess)
     {
+        Debug.Log("create");
         dataLoadProcess = _dataLoadProcess;
 
-        GetDate(documentID, sheetID);
+        EditorCoroutineUtility.StartCoroutine(GetDate(documentID, sheetID), this);
     }
 
-    private async void GetDate(string documentID, string sheetID)
+    private IEnumerator GetDate(string documentID, string sheetID)
     {
         string url = $"https://docs.google.com/spreadsheets/d/{documentID}/export?format=tsv&gid={sheetID}";
 
         UnityWebRequest request = UnityWebRequest.Get(url);
 
-        var requestTask = Task.Run(() => request.SendWebRequest());
-        await requestTask;
+        yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.ConnectionError || request.responseCode != 200)
         {
             Debug.Log("error");
 
-            return;
+            yield break;
         }
 
         HandleData(request.downloadHandler.text);
