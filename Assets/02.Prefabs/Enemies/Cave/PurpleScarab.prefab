@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 8338578475173991500}
   - component: {fileID: 8338578475173991501}
   - component: {fileID: 8338578475173991506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PurpleScarab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

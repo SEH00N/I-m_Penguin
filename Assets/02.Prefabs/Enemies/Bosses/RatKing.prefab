@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 4264742579613581765}
   - component: {fileID: 4264742579613581764}
   - component: {fileID: 4264742579613581767}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RatKing
   m_TagString: Untagged
   m_Icon: {fileID: 0}

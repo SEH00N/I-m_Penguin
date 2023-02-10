@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 511911461049063544}
   - component: {fileID: 511911461049063545}
   - component: {fileID: 511911461049063542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MeatBug
   m_TagString: Untagged
   m_Icon: {fileID: 0}

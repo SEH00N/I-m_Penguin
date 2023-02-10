@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 7868075958753963090}
   - component: {fileID: 7868075958753963089}
   - component: {fileID: 7868075958753963088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PossessedBlackBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

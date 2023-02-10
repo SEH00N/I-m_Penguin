@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 20856279666775922}
   - component: {fileID: 20856279666775921}
   - component: {fileID: 20856279666775920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DreadEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}

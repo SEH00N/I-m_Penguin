@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 6479287888519360459}
   - component: {fileID: 6479287888519360458}
   - component: {fileID: 6479287888519360457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CaveCaterpillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 4478288494054602967}
   - component: {fileID: 4478288494054602984}
   - component: {fileID: 4478288494054602985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hog
   m_TagString: Untagged
   m_Icon: {fileID: 0}

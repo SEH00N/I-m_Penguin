@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 1015997251575655276}
   - component: {fileID: 1015997251575655267}
   - component: {fileID: 1015997251575655266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PossessedWatchdog
   m_TagString: Untagged
   m_Icon: {fileID: 0}

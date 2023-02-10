@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 7574315885767396082}
   - component: {fileID: 7574315885767396045}
   - component: {fileID: 7574315885767396044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlackBoar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

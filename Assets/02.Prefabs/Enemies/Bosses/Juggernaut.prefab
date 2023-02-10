@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 2746719264969749586}
   - component: {fileID: 2746719264969749587}
   - component: {fileID: -7654058599964437632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Juggernaut
   m_TagString: Untagged
   m_Icon: {fileID: 0}

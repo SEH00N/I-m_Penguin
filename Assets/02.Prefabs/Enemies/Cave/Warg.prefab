@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4618888124590417920}
   - component: {fileID: 4618888124590417923}
   - component: {fileID: 4618888124590417922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Warg
   m_TagString: Untagged
   m_Icon: {fileID: 0}

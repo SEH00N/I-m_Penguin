@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 6076622516971958750}
   - component: {fileID: 6076622516971958751}
   - component: {fileID: 5947920088189918653}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ButcherGradeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

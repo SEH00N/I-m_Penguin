@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 8014076630117452096}
   - component: {fileID: 8014076630117452099}
   - component: {fileID: 8014076630117452098}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShardLizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

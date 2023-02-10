@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 8374803281521872017}
   - component: {fileID: 8374803281521872030}
   - component: {fileID: 8374803281521872031}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Larva
   m_TagString: Untagged
   m_Icon: {fileID: 0}

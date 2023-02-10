@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 802606136116399895}
   - component: {fileID: 802606136116399912}
   - component: {fileID: 802606136116399913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CrystalLizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

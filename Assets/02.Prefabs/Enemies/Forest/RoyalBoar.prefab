@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 7176608855791102912}
   - component: {fileID: 7176608855791102913}
   - component: {fileID: 7176608855791102914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoyalBoar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
