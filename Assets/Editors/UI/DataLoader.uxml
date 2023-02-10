@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editors/UI/DataLoad.uss?fileID=7433441132597879392&amp;guid=dda8db57efe5cef40a63398a86a08bba&amp;type=3#DataLoad" />
+    <ui:VisualElement name="Container" style="flex-basis: 100%; flex-grow: 1;">
+        <ui:VisualElement name="InputField" style="flex-direction: row;">
+            <ui:VisualElement name="InputID">
+                <ui:TextField picking-mode="Ignore" value="filler text" text="DocumentID" name="DocumentID" style="flex-basis: auto; flex-shrink: 1; -unity-background-scale-mode: stretch-to-fill; width: 222px;" />
+                <ui:TextField picking-mode="Ignore" value="filler text" text="SheetID" name="SheetID" style="flex-basis: auto; flex-shrink: 1; align-items: stretch; -unity-background-scale-mode: stretch-to-fill; width: 222px;" />
+            </ui:VisualElement>
+            <ui:Button text="Button" display-tooltip-when-elided="true" name="LoadBtn" style="flex-shrink: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Data" style="flex-grow: 1; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="DataText" style="flex-shrink: 1; flex-grow: 1; background-color: rgb(36, 36, 36); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

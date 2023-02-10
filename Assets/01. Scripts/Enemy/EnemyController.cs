@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     public GameObject target;
     public GameObject body;
     [HideInInspector] public EnemyInfoSO info;
+    public float attackDistance = 2f;//EnemtInfo에 있는 값과 동일하게 설정
 
     private Dictionary<Type, EnemyState> stateList = new Dictionary<Type, EnemyState>();
 
@@ -73,6 +74,6 @@ public class EnemyController : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(body.transform.position, 2.2f);
+        Gizmos.DrawWireSphere(body.transform.position, attackDistance);
     }
 }

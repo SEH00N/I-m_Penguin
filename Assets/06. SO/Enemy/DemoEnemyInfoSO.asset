@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHealth: 100
   killReward: 100
   meleeAttackRangeRadius: 1
-  attackDistance: 2.2
+  attackDistance: 4
   meleeAttackPower: 5
   rangeAttackPower: 0
   attackTime: 2
