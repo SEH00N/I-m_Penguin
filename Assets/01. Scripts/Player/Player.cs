@@ -21,4 +21,14 @@ public class Player : MonoBehaviour
             return playerHealth;
         }
     }
+
+    private PlayerStat playerStat = null;
+    public PlayerStat PlayerStat {
+        get {
+            if(playerStat == null)
+                playerStat = GetComponent<PlayerStat>();
+            
+            return playerStat;
+        }
+    }
 }

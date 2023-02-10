@@ -2,19 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public struct StatInfo
-{
-    public Stat stat;
-    public float value;
-}
-
 public class PlayerStat : MonoBehaviour
 {
     /// <summary>
     /// 초기 스탯
     /// </summary>
-    [SerializeField] List<StatInfo> initalStats = new List<StatInfo>();    
+    [SerializeField] List<StatInfo> initalStats = new List<StatInfo>();
     private Dictionary<Stat, float> stats = new Dictionary<Stat, float>();
 
     /// <summary>
@@ -43,7 +36,7 @@ public class PlayerStat : MonoBehaviour
     }
 
     /// <summary>
-    /// 스택 증가 및 감소
+    /// 스탯 증가 및 감소
     /// </summary>
     public void SetStat(Stat stat, float amount)
     {
