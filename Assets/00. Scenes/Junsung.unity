@@ -773,9 +773,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef180c72edb1d8848bf69eb1680e0fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageindex: 1
+  stageIndex: 1
   stageLevel: 0
-  info: {fileID: 0}
+  maxStageLevel: 20
+  StageInfo: {fileID: 0}
+  currentEnemyCount: 0
   enemySpanwPoints:
   - {fileID: 1097502591}
   - {fileID: 1609417149}

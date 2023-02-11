@@ -35,6 +35,12 @@ public class EnemyEventHandler : MonoBehaviour
     #endregion
 
     #region die
+    public void DieAnimEvent()
+    {
+        GameObject.FindObjectOfType<StageManager>().DescreaseEnemyCount();
+        Destroy(gameObject);
+    }
+
     private void SetDieEvent()
     {
         DieAction += controller.ChangeState<DeadState>;

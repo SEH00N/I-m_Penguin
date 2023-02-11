@@ -17,6 +17,14 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         currentHp = MaxHp;
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            OnDamage(currentHp);
+        }
+    }
+
     public void OnDamage(int damage, Action callback = null)
     {
         currentHp = Mathf.Max(currentHp - damage, 0);

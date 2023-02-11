@@ -6,7 +6,7 @@ public class DeadState : EnemyState
 {
     public override void StartAction()
     {
-
+        Debug.Log($"{controller.name} is dead");
     }
 
     public override void UpdateAction()
