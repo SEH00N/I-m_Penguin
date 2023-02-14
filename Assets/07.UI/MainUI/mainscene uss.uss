@@ -1,0 +1,29 @@
+.panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    flex-basis: 20%;
+    flex-direction: column;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    color: rgb(2, 0, 0);
+    -unity-font-style: bold;
+    flex-grow: 1;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+}
+
+.button:hover {
+    font-size: 87px;
+}
+
+.panel.off {
+    display: none;
+}
